@@ -1,3 +1,3 @@
-import { Book } from "../interface/books.interface";
+import { book } from "../interface/books.interface";
 
-export const booksDatabase: Book[] = [];
+export const booksDatabase: book[] = [];

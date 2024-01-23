@@ -11,7 +11,9 @@ export class BookControllers {
     };
 
     getBooks = (req: Request, res: Response): Response => {
-        const allBooks = this.bookService.getBooks;
+        const name = req.query.name as string;
+
+        const allBooks = this.bookService.getBooks(name);
 
         return res.status(200).json(allBooks);
     };
